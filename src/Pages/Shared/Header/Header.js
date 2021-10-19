@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClinicMedical } from '@fortawesome/free-solid-svg-icons';
+
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
@@ -10,7 +13,7 @@ const Header = () => {
         <div>
             <Navbar  bg="dark" variant="dark" collapseOnSelect expand="lg" fixed="top">
     <Container>
-    <Navbar.Brand href="#home">Medicate Diagnostic Center</Navbar.Brand>
+    <Navbar.Brand href="#home"><FontAwesomeIcon icon={faClinicMedical} />Medicate Diagnostic Center</Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
       <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkedAlt, faHospitalUser, faHeartbeat, faAmbulance } from '@fortawesome/free-solid-svg-icons';
+
 import { Container, Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword  } from "firebase/auth";
@@ -28,9 +31,6 @@ const SignUp = () => {
             setError('Password Must be at least 6 characters') ;
             return;
         }
-        if(!/^(?=.*[A-Z].*[A-Z])/.test(password)){
-         setError('Password Must be contain 2 upper Case');
-        }
         
         createUserWithEmailAndPassword(auth, email, password)
         .then(result =>{
@@ -45,7 +45,7 @@ const SignUp = () => {
     return (
         <div>
             <Container>
-            <form onSubmit={handleRegistration}  >
+            <form onSubmit={handleRegistration}>
                 <h2 className="m-5">Register here for Sign Up</h2>
                 <input onBlur={handleEmailChange} type="email" name="" id=""
                 placeholder="Your Email" required/>
@@ -57,10 +57,16 @@ const SignUp = () => {
                 <br />
                 <div className="row mb-3 text-danger">{error}</div>
                 <Button type="submit" variant="warning">Register</Button>
-                <p>Alredy have an Account? <Link to="/login">Login here</Link></p>
-                <div>-------or---------</div>
-                {/* <Button onClick={signInUsingGoogle} variant="warning mb-5">Google Sign In</Button> */}
+                <p className="m-3">Alredy have an Account? <Link to="/login">Login here</Link></p>
+                
             </form>
+            <div className="m-4" style={{marginLeft:'2px'}}>
+            <FontAwesomeIcon icon={faMapMarkedAlt} size = '2x'  />
+            <FontAwesomeIcon icon={faHospitalUser} size = '2x' />
+            <FontAwesomeIcon icon={faHeartbeat} size = '2x'  />
+            <FontAwesomeIcon icon={faAmbulance} size = '2x'  />
+
+            </div>
             </Container>
         </div>
     );

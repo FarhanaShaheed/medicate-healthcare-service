@@ -9,7 +9,7 @@ const Product = ({product}) => {
             <Container>
             <div>
            <Col>
-     <Card className="product-card">
+     <Card id="products" className="product-card">
        <Card.Img className="card-img" variant="top" src={img} style={{height:'20rem', width:'20rem',marginLeft:'70px'}}  fluid/>
        <Card.Body className="product-body">
          <Card.Title>{name}</Card.Title>

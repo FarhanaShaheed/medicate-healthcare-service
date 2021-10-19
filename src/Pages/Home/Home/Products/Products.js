@@ -12,7 +12,7 @@ const Products = () => {
     }, [])
     return (
         <Container>
-        <div  id="products">
+        <div  >
         <h2 className="mt-5">Our Products</h2>
             <p>You can order online and can buy physically also</p>
         <Row xs={1} md={2} className="g-4">
