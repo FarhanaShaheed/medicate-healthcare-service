@@ -1,0 +1,16 @@
+.card-title {
+    color: rgba(45, 54, 99, .75);
+}
+
+.service-card {
+    background-color: #EDF3F6;
+}
+
+.service-card :hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.detail-button {
+    background-color: #29aeaa;
+    border: none;
+}
