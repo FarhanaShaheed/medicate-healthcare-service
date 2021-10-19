@@ -1,0 +1,13 @@
+.product-card {
+    border: 3px solid cadetblue;
+
+}
+
+.product-body {
+    background-color: #EDF3F6;
+}
+
+.cart-button {
+    background-color: #29aeaa;
+    border: none;
+}

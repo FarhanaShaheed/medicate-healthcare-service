@@ -18,7 +18,8 @@ const Doctor = ({doctor}) => {
            <br />
            Experience: {experience} Years
          </Card.Text>
-         <Card.Title className="special">{special}</Card.Title>
+         {/* <Card.Title className="special">{special}</Card.Title> */}
+         <Card.Text className="special">{special}</Card.Text>
        </Card.Body>
      </Card>
    </Col>
