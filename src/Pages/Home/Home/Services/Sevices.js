@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Service from '../../Service/Service';
+import 'animate.css';
+import './Services.css';
+
 
 const Services = () => {
     const[services, setServices] = useState([]);
@@ -13,7 +16,7 @@ const Services = () => {
     return (
         <Container>
         <div>
-        <h2 className="mt-5">Our Services</h2>
+        <h2 className="mt-5 animate__animated animate__bounce">Our Services</h2>
             <p>A medical laboratory or clinical laboratory is a laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease.</p>
         <Row xs={1} md={3} className="g-4">
         {

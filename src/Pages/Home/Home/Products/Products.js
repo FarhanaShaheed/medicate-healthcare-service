@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Product from '../Product/Product';
+import 'animate.css';
+import './Products.css';
 
 const Products = () => {
     const[products, setProducts] = useState([]);
@@ -13,7 +15,7 @@ const Products = () => {
     return (
         <Container>
         <div  >
-        <h2 className="mt-5">Our Products</h2>
+        <h2 className="mt-5 animate__animated animate__bounce">Our Products</h2>
             <p>You can order online and can buy physically also</p>
         <Row xs={1} md={2} className="g-4">
         {

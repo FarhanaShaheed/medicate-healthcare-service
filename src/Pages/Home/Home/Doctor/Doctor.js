@@ -3,7 +3,7 @@ import './Doctor.css';
 import { Card, Col, Container } from 'react-bootstrap';
 
 const Doctor = ({doctor}) => {
-    const{name, img, id, special, experience,age } = doctor;
+    const{name, img, special, experience,age } = doctor;
     return (
         <Container>
             
@@ -18,7 +18,6 @@ const Doctor = ({doctor}) => {
            <br />
            Experience: {experience} Years
          </Card.Text>
-         {/* <Card.Title className="special">{special}</Card.Title> */}
          <Card.Text className="special">{special}</Card.Text>
        </Card.Body>
      </Card>

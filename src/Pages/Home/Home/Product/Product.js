@@ -10,7 +10,7 @@ const Product = ({product}) => {
             <div>
            <Col>
      <Card id="products" className="product-card">
-       <Card.Img className="card-img" variant="top" src={img} style={{height:'20rem', width:'20rem',marginLeft:'70px'}}  fluid/>
+       <Card.Img className="card-img" variant="top" src={img} style={{height:'20rem'}}  fluid/>
        <Card.Body className="product-body">
          <Card.Title>{name}</Card.Title>
          <Card.Text>
