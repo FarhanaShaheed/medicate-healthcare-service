@@ -14,9 +14,9 @@ If you are a new user to my website I welcome you to signup or get registered to
 
 If you are already registered in my website then you can simply login there by the email and password. Also there are a Google Signin option who wants to login without email and password.
 
-### PrvateRoute
+### PrivateRoute
 
-If you want to see more in servce secton for that you have to login for all the access.
+If you want to see more in service section for that you have to login for all the access.
 
 ### Deployment
 
